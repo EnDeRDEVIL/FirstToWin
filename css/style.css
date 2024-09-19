@@ -11,6 +11,11 @@
     margin: 0;
     padding: 0;
 }
+body
+{
+    background-color: #D0F2DC;
+    align-content: center;
+}
 
 /*           Começo do style do Header           */
 
@@ -38,7 +43,7 @@ header
     display: block;
     width: 100%;
     height: fit-content;
-    background-color: #9998FD;
+    background-color: #A2A694;
     position: relative;
 }
 .headerTop
@@ -84,7 +89,7 @@ header
 {
     display: inline-flex;
     width: 100%;
-    background-color: #ff0000;
+    background-color: #263440;
     position: relative;
 }
 .navUl
@@ -118,8 +123,11 @@ header
 .index
 {
     display: block;
-    width: 100%;
+    width: 80%;
     height: fit-content;
+    background-color: #A65E1F;
+    position: relative;
+    align-self: center;
 }
 .indexH1
 {
