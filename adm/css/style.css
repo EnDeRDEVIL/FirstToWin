@@ -2,7 +2,30 @@
     Laranja: #F9A687,#DBBA76,#F2C78F,#DBA176/
     Azul: #9998FD,#889FE3,#A3CFF9,#88CFE3,#98FDF8/ 
 */
-
+html
+{
+    height: 100%;
+    width: 100%;
+}
+body
+{
+    height: 100%;
+    width: 100%;
+}
+.header
+{
+    height: 10% !important;
+}
+footer
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0 !important;
+}
+.fillScreen
+{
+    line-height: 100vh;
+}
 .bgTop
 {
     background-color: #9998fd;
@@ -19,6 +42,8 @@
 .textSpacing3
 {
     margin-left: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 .textSpacing2
@@ -26,10 +51,15 @@
     margin-right: 5rem;
 }
 
-.fullSize
+.sizedLogin
 {
-    width: 100%;
+    width: 30%;
     height: 100%;
+    padding: 2%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border: #9998FD solid 5px;
+    border-radius: 30px;
 }
 ul
 {
@@ -41,9 +71,13 @@ a
     color: black;
     text-decoration: none;
 }
-a, a:hover, a:focus, a:active {
+a, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+a:hover
+{
+    color: aliceblue;
 }
 .mrgBtm
 {
@@ -51,17 +85,73 @@ a, a:hover, a:focus, a:active {
     border-style: solid;
     border: 30px;
 }
-.size
+.space
 {
-    width: 15%;
-    height: 10%;
+    float: inline-end;
+    width: 50%;
 }
-.teste
+.spaceLogin
 {
-    width: 30%;
+    float: inline-end;
+    width: 50%;
+}
+.sizeDiv
+{
+    width: 100%;
+    padding: 0;
+}
+
+.sizeDivLogin
+{
+    height: 30%;
+    padding: 0;
+}
+.sizeIndex
+{
+    height: 90%;
+}
+.sizeForm
+{
+    width: 45%;
+    margin-top: 4%;
+    background-color: #9998fd;
+    padding: 3%;
+    border-radius: 5%;
 }
 .border
 {
     border: 15px solid black;
     border-collapse: collapse;
+}
+.btnCenter
+{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin-top: 3%;
+}
+.center
+{
+    display: flex;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    flex: 1;
+}
+.btnCorrect
+{
+    float: right;
+    margin-top: 5%;
+}
+.correct
+{
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+}
+.btnPosition
+{
+    width: 100%;
+    margin-top: 5%;
 }

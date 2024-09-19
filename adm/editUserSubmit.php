@@ -10,7 +10,7 @@ if(!empty($_GET['id_user'])){
     $senha = $_GET ['senha'];
     $email = $_GET ['email'];
     $telefone = $_GET ['telefone'];
-    $permissao = $_GET ['permissao'];
+    $permissao = implode(',',$_GET['permissao']);
  
     $user->editUser($nome,$dtNasc,$nick,$senha,$email,$telefone,$permissao,$id_user);
     header('Location: userManagment.php');

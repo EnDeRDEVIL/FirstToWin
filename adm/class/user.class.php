@@ -20,6 +20,31 @@ class User
         $this->con = new Connect();
     }
 
+    public function doLogin($email,$senha)
+    {
+        $sql = $this->con->connection()->prepare("SELECT * FROM user WHERE email = :email AND senha = :senha");
+
+        $sql->bindValue(":email", $email);
+        $sql->bindValue(":senha", $senha);
+
+        $sql->execute();
+
+        if($sql->rowCount() > 0)
+        {
+            $sql = $sql->fetch();
+
+            $_SESSION['logged'] = $sql['id_user'];
+            $_SESSION['nick'] = $sql['nick'];
+            $_SESSION['permissao'] = $sql['permissao'];
+
+            return TRUE;
+        }
+        else
+        {
+            return FALSE;
+        }
+    }
+
     private function validateEmail($email)
     {
         $sql = $this->con->connection()->prepare("SELECT id_user FROM user WHERE email = :email");
@@ -58,7 +83,7 @@ class User
                 $sql->bindParam(':nome',$this->nome, PDO::PARAM_STR);
                 $sql->bindParam(':dtNasc',$this->dtNasc, PDO::PARAM_STR);
                 $sql->bindParam(':nick',$this->nick, PDO::PARAM_STR);
-                $sql->bindParam(':senha',$this->senha, PDO::PARAM_STR);
+                $sql->bindParam(':senha',md5($this->senha), PDO::PARAM_STR);
                 $sql->bindParam(':email',$this->email, PDO::PARAM_STR);
                 $sql->bindParam(':telefone',$this->telefone, PDO::PARAM_STR);
                 $sql->bindParam(':permissao',$this->permissao, PDO::PARAM_STR);
@@ -153,7 +178,7 @@ class User
                 $sql->bindValue(':nome',$nome);
                 $sql->bindValue('dtNasc',$dtNasc);
                 $sql->bindValue('nick',$nick);
-                $sql->bindValue(':senha',$senha);
+                $sql->bindValue(':senha',md5($senha));
                 $sql->bindValue(':email',$email);
                 $sql->bindValue(':telefone',$telefone);
                 $sql->bindValue(':permissao',$permissao);
@@ -183,6 +208,91 @@ class User
         catch (PDOException $ex)
         {
             echo 'Erro: '.$ex->getMessage();
+        }
+    }
+
+    public function __set($atributo, $valor)
+    {
+        $this->$atributo = $valor;
+    }
+
+    public function __get($atributo)
+    {
+        return $this->$valor;
+    }
+    
+    public function setUser($id_user)
+    {
+        $this->id_user = $id_user;
+        $sql = $this->con->connection()->prepare("SELECT * FROM user WHERE id_user = :id_user");
+        $sql->bindValue(":id_user",$id_user);
+        $sql->execute();
+
+        if($sql->rowCount() > 0)
+        {
+            $sql = $sql->fetch();
+            $this->permissao = explode(',',$sql['permissao']);//Transforma em Array(add,edit,del,super)
+        }
+    }
+
+    public function getPermissions()
+    {
+        return $this->permissao;
+    }
+
+    public function havePermission($p)
+    {
+        if(in_array($p, $this->permissao))
+        {
+            return TRUE;
+        }
+        else
+        {
+            return FALSE;
+        }
+    }
+
+    public function searchPermissionAdd($arrayperm)
+    {
+        foreach($arrayperm as $item)
+        {
+            if($item == "add")
+            {
+                return TRUE;
+            }
+        }
+    }
+
+    public function searchPermissionEdit($arrayperm)
+    {
+        foreach($arrayperm as $item)
+        {
+            if($item == "edit")
+            {
+                return TRUE;
+            }
+        }
+    }
+
+    public function searchPermissionDel($arrayperm)
+    {
+        foreach($arrayperm as $item)
+        {
+            if($item == "del")
+            {
+                return TRUE;
+            }
+        }
+    }
+
+    public function searchPermissionSuper($arrayperm)
+    {
+        foreach($arrayperm as $item)
+        {
+            if($item == "super")
+            {
+                return TRUE;
+            }
         }
     }
 }

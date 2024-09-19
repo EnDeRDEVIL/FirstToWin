@@ -1,0 +1,189 @@
+ /* 
+    Laranja: #F9A687,#DBBA76,#F2C78F,#DBA176/
+    Azul: #9998FD,#889FE3,#A3CFF9,#88CFE3,#98FDF8/ 
+*/
+
+
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*           Começo do style do Header           */
+
+header
+{
+    display: grid;
+}
+.logo
+{
+    display: flex;
+    width: 8%;
+    position: relative;
+}
+.userIcon
+{
+    display: flex;
+    width: 3%;
+    position: relative;
+    align-self: center;
+    left: 85%;
+    top: 15%;
+}
+.headerBG
+{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    background-color: #9998FD;
+    position: relative;
+}
+.headerTop
+{
+    display: flex;
+    width: 100%;
+}
+.headerTopL
+{
+    display: flex;
+    width: 100%;
+}
+.headerTopR
+{
+    display: flex;
+    width: 100%;
+}
+.headerBottom
+{
+    width: 100%;
+}
+.headerExitBtn
+{
+    position: relative;
+    top: 30%;
+    height: 30%;
+    width: 10%;
+    align-content: center;
+}
+.headerSlogan
+{
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    align-self: center;
+    font-size: 150%;
+    font-family: "Merriwheather";
+    left: 26.5%;
+}
+
+                        /* Itens do Nav*/
+.navBG
+{
+    display: inline-flex;
+    width: 100%;
+    background-color: #ff0000;
+    position: relative;
+}
+.navUl
+{
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.navItens
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    border-radius: 25%;
+    padding: 0.2%;
+    background-color: #00ff2a;
+    font-family: "Merriwheather"
+}
+
+/*           Fim do style do Header           */
+
+
+/*           Começo do style da Index           */
+
+.index
+{
+    display: block;
+    width: 100%;
+    height: fit-content;
+}
+.indexH1
+{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.firstSquare
+{
+    display: flex;
+    width: 100%;
+}
+.secondSquare
+{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.thirdSquare
+{
+    display: flex;
+    width: 100%;
+}
+.squareImage
+{
+    width: 20%;
+    height: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    border: black solid 2px;
+    border-radius: 15%;
+}
+.squareImageLeft
+{
+    width: 20%;
+    height: 19.751vw;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 15%;
+    border: black solid 2px;
+    border-radius: 15%;
+}
+.abouts
+{
+    width: 30%;
+    align-content: center;
+}
+.h2Abouts
+{
+    margin-left: 5%;
+}
+.h2AboutsMid
+{
+    margin-right: 5%;
+    text-align: end;
+}
+.pAbouts
+{
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.pAboutsMid
+{
+    margin-top: 5%;
+    margin-right: 3%;
+}

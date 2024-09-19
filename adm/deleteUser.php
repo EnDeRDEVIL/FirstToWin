@@ -10,6 +10,7 @@
         exit;
    
     }else{
+        echo '<script type="text/javascript">alert("deu bololô ao excluir o contato :( ")</script>';
         header("Location: userManagment.php");
         exit;
     }
