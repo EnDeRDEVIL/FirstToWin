@@ -1,0 +1,67 @@
+ /* 
+    Laranja: #F9A687,#DBBA76,#F2C78F,#DBA176/
+    Azul: #9998FD,#889FE3,#A3CFF9,#88CFE3,#98FDF8/ 
+*/
+
+.bgTop
+{
+    background-color: #9998fd;
+}
+.bgMiddle
+{
+    background-color: #dba176;
+}
+
+.textSpacing
+{
+    margin-left: 1%;
+}
+.textSpacing3
+{
+    margin-left: 1rem;
+}
+
+.textSpacing2
+{
+    margin-right: 5rem;
+}
+
+.fullSize
+{
+    width: 100%;
+    height: 100%;
+}
+ul
+{
+    margin: 0;
+    padding: 10px;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.mrgBtm
+{
+    border-bottom: black;
+    border-style: solid;
+    border: 30px;
+}
+.size
+{
+    width: 15%;
+    height: 10%;
+}
+.teste
+{
+    width: 30%;
+}
+.border
+{
+    border: 15px solid black;
+    border-collapse: collapse;
+}
