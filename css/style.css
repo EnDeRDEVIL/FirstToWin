@@ -26,7 +26,7 @@ header
 .logo
 {
     display: flex;
-    width: 8%;
+    width: 25%;
     position: relative;
 }
 .userIcon
@@ -35,7 +35,7 @@ header
     width: 3%;
     position: relative;
     align-self: center;
-    left: 85%;
+    left: 65%;
     top: 15%;
 }
 .headerBG
@@ -43,7 +43,7 @@ header
     display: block;
     width: 100%;
     height: fit-content;
-    background-color: #A2A694;
+    background-color: #598392;
     position: relative;
 }
 .headerTop
@@ -81,7 +81,7 @@ header
     align-self: center;
     font-size: 150%;
     font-family: "Merriwheather";
-    left: 26.5%;
+    left: 9.5%;
 }
 
                         /* Itens do Nav*/
@@ -89,7 +89,7 @@ header
 {
     display: inline-flex;
     width: 100%;
-    background-color: #263440;
+    background-color: #124559;
     position: relative;
 }
 .navUl
@@ -111,7 +111,7 @@ header
     border: 1px solid #ffffff;
     border-radius: 25%;
     padding: 0.2%;
-    background-color: #00ff2a;
+    background-color: #EFF6E0;
     font-family: "Merriwheather"
 }
 
@@ -123,11 +123,18 @@ header
 .index
 {
     display: block;
-    width: 80%;
+    width: 100%;
     height: fit-content;
-    background-color: #A65E1F;
+    background-color: #01161E;
     position: relative;
     align-self: center;
+}
+.indexContent
+{
+    width: 80%;
+    display: flow;
+    background-color: #AEC3B0;
+    margin: auto;
 }
 .indexH1
 {
@@ -194,4 +201,33 @@ header
 {
     margin-top: 5%;
     margin-right: 3%;
+}
+
+
+/*           Fim do style do index           */
+
+/*           Começo do style do Footer           */
+
+.footer
+{
+    display: block;
+    background-color: #598392;
+}
+.footerhr
+{
+    display: flex;
+    flex-direction: column;
+}
+.FooterDH
+{
+    margin-left: 2%;
+}
+.FooterDHItens
+{
+    margin-right: 1%;
+}
+.h5Footer
+{
+    margin-top: 2%;
+    margin-left: 1%;
 }

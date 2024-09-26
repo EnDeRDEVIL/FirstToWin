@@ -12,7 +12,7 @@
         <header>
             <div class="headerBG">
                 <div class="headerTop">
-                    <img src="img/logo2.png" class="logo">
+                    <a href="index.php" class="logo"><img src="img/logo2.png" class="logo"></a>
 
                     <img src="img/userIcon.png" class="userIcon">
                     
