@@ -240,3 +240,12 @@ header
     margin-top: 2%;
     margin-left: 1%;
 }
+.cpright
+{
+    text-align: center;
+}
+.lowerDiv
+{
+    display: flex;
+    justify-content: center;
+}
