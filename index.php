@@ -38,6 +38,14 @@
                     <p class="pAbouts">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae sequi consequatur eligendi impedit neque, eius nesciunt dignissimos similique sed consequuntur, a nostrum, alias quasi. Ex magnam laboriosam optio dolorem sapiente.</p>
                 </div>
             </div>
+
+            <div class="video">
+                <div>
+                    <h3>Veja o exemplo de como você pode jogar!</h3>
+                </div>
+                
+                <iframe width="420px" height="315px" src="https://www.youtube.com/watch?v=uDXhYFe3wLg" style="margin-bottom: 5%;"></iframe>
+            </div>
         </div>
     </div>
     

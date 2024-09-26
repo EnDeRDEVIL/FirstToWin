@@ -14,9 +14,10 @@
                 <div class="headerTop">
                     <a href="index.php" class="logo"><img src="img/logo2.png" class="logo"></a>
 
-                    <img src="img/userIcon.png" class="userIcon">
-                    
                     <p class="headerSlogan">A cada vitória, um degrau mais próximo da glória!</p>
+
+                    <a href="#" class="userIcon"><img src="img/userIcon.png" class="userIcon"></a>
+                
                 </div>
             </div>
 
@@ -24,9 +25,9 @@
 
             <nav class="navBG">
                 <ul class="navUl">
-                    <li class="navItens">Home</li>
-                    <li class="navItens">Torneios</li>
-                    <li class="navItens">Aulas</li>
+                    <a href="#" class="navItens"><li class="navItens">Home</li></a>
+                    <a href="#" class="navItens"><li class="navItens">Torneios</li></a>
+                    <a href="#" class="navItens"><li class="navItens">Aulas</li></a>
                 </ul>
             </nav>
         </header>

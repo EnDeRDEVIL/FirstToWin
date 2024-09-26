@@ -32,11 +32,12 @@ header
 .userIcon
 {
     display: flex;
-    width: 3%;
-    position: relative;
+    width: 17%;
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    margin-right: 1%;
     align-self: center;
-    left: 65%;
-    top: 15%;
 }
 .headerBG
 {
@@ -81,7 +82,7 @@ header
     align-self: center;
     font-size: 150%;
     font-family: "Merriwheather";
-    left: 9.5%;
+    left: 13%;
 }
 
                         /* Itens do Nav*/
@@ -102,6 +103,8 @@ header
     text-align: center;
     align-content: center;
     justify-content: center;
+    text-align: center;
+    text-decoration: none;
 }
 .navItens
 {
@@ -112,9 +115,9 @@ header
     border-radius: 25%;
     padding: 0.2%;
     background-color: #EFF6E0;
-    font-family: "Merriwheather"
-}
+    font-family: "Merriwheather";
 
+}
 /*           Fim do style do Header           */
 
 
@@ -202,7 +205,13 @@ header
     margin-top: 5%;
     margin-right: 3%;
 }
-
+.video
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
 
 /*           Fim do style do index           */
 
